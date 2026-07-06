@@ -22,7 +22,7 @@ from backend.database import (
     risk_scores_collection,
 )
 
-from backend.models.schemas.user_schema import UserModel
+from backend.models.user_model import UserModel
 from backend.models.schemas.auth_schema import DashboardSummarySchema
 from backend.models.schemas.routes.auth_routes import (
     get_current_user,
