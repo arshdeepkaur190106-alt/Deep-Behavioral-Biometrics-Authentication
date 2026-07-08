@@ -1,18 +1,18 @@
 import pandas as pd
 
-data = pd.read_csv("dataset/behavior_dataset.csv")
+data = pd.read_csv("dataset/DSL-StrongPasswordData.csv")
 
 print("First 5 rows:")
 print(data.head())
 
-print("\nDataset information:")
-print(data.info())
+print("\nShape:")
+print(data.shape)
+
+print("\nColumns:")
+print(data.columns)
 
 print("\nMissing values:")
 print(data.isnull().sum())
 
-print("\nDuplicate rows:")
-print(data.duplicated().sum())
-
-print("\nLabel distribution:")
-print(data["label"].value_counts()) 
+print("\nUsers:")
+print(data["subject"].value_counts())
