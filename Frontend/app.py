@@ -24,9 +24,9 @@ Streamlit automatically discovers files in the frontend/pages/ folder
 and renders them as additional pages in the sidebar navigation menu.
 """
 
-import streamlit as st
 
-from Frontend.utils import api_client
+import streamlit as st
+from utils import api_client
 
 # ---------------------------------------------------------------------------
 # Page configuration (must be the first Streamlit command executed)
@@ -170,7 +170,6 @@ def main() -> None:
         with col2:
             st.markdown("#### New here?")
             st.page_link("pages/2_Register.py", label="Create an Account", icon="📝")
-
     st.markdown("---")
     st.caption(
         "Project Module: Frontend, Backend & Database Infrastructure. "

@@ -22,12 +22,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from backend.config import settings
 from backend.database import connect_to_mongo, close_mongo_connection, create_indexes
 
-from backend.models.schemas.routes import auth_routes
-from backend.models.schemas.routes import dashboard_routes
-from backend.models.schemas.routes import history_routes
-from backend.models.schemas.routes import alert_routes
-from backend.models.schemas.routes import risk_routes
-
+from backend.routes import auth_routes
+from backend.routes import dashboard_routes
+from backend.routes import history_routes
+from backend.routes import alert_routes
+from backend.routes import risk_routes
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
