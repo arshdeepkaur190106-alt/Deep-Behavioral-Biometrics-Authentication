@@ -27,7 +27,7 @@ from backend.routes import dashboard_routes
 from backend.routes import history_routes
 from backend.routes import alert_routes
 from backend.routes import risk_routes
-
+from backend.routes import behavior_routes
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """
