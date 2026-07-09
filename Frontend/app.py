@@ -184,4 +184,5 @@ else:
     # and imports app.py's module-level code the same way when run via
     # `streamlit run`, so we also call main() here to ensure it renders
     # correctly under Streamlit's actual execution model.
-    main()
+    main() 
+    
