@@ -29,7 +29,7 @@ const CONFIG = {
     ENABLE_AI_PREDICTION: true,
 
     // API (backend integration)
-    API_URL: "http://localhost:5000/api/behavior",
+    API_URL: "http://localhost:8000/api/behavior",
 
     // Debug mode
     DEBUG: true

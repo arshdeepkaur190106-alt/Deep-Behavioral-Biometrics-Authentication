@@ -3,19 +3,18 @@
 // ===============================
 
 function collectBehaviorData() {
-
     const features = extractFeatures();
 
-    console.clear();
-
-    console.log("====================================");
-    console.log("Behavior Authentication Report");
-    console.log("====================================");
-
-    console.table(features);
-
-    console.log("AI Ready JSON");
-
-    console.log(JSON.stringify(features, null, 4));
-
+    fetch(CONFIG.API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(features)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Server response:", data);
+    })
+    .catch(error => {
+        console.error("Error sending behavior data:", error);
+    });
 }
