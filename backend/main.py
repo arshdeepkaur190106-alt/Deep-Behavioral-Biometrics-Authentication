@@ -28,6 +28,7 @@ from backend.routes import history_routes
 from backend.routes import alert_routes
 from backend.routes import risk_routes
 from backend.routes import behavior_routes
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """
@@ -95,8 +96,6 @@ app.include_router(history_routes.router)
 app.include_router(alert_routes.router)
 app.include_router(risk_routes.router)
 app.include_router(behavior_routes.router)
-
-
 # ---------------------------------------------------------------------------
 # Root / health-check endpoint
 # ---------------------------------------------------------------------------

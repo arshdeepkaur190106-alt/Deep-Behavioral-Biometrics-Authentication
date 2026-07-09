@@ -55,6 +55,7 @@ if st.button("Run AI Risk Prediction", use_container_width=True):
         response = requests.post(
             "http://127.0.0.1:8000/api/behavior",
             json=behavior_data,
+            headers={"Authorization": f"Bearer {token}"},
             timeout=10,
         )
 
