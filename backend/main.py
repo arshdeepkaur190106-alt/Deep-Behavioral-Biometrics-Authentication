@@ -94,6 +94,7 @@ app.include_router(dashboard_routes.router)
 app.include_router(history_routes.router)
 app.include_router(alert_routes.router)
 app.include_router(risk_routes.router)
+app.include_router(behavior_routes.router)
 
 
 # ---------------------------------------------------------------------------
